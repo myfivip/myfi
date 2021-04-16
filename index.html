@@ -1,32 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
-
-<script>
-    function initFingerprintJS() {
-        // Initialize an agent at application startup.
-        const fpPromise = FingerprintJS.load();
-
-        // Get the visitor identifier when you need it.
-        fpPromise
-            .then(fp => fp.get())
-            .then(result => {
-                // This is the visitor identifier:
-                const visitorId = result.visitorId;
-                console.log(visitorId);
-                alert(visitorId)
-            });
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"><link rel=icon href=/favicon.ico><title>Myfi - Integrated financial service platform</title><link href=css/app.004a8d67.css rel=preload as=style><link href=css/chunk-vendors.ef614b8f.css rel=preload as=style><link href=js/app.30037eaf.js rel=preload as=script><link href=js/chunk-vendors.4f2e94fd.js rel=preload as=script><link href=css/chunk-vendors.ef614b8f.css rel=stylesheet><link href=css/app.004a8d67.css rel=stylesheet></head><body><noscript><strong>We're sorry but Myfi doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div class=bg-body></div><div id=app></div><style>.bg-body {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background: #070303 url(bg.png) no-repeat center 0;
+        background-size: cover;
     }
-</script>
-<script
-        async
-        src="//cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs@3/dist/fp.min.js"
-        onload="initFingerprintJS()"
-></script>
+    svg {
+        position: absolute;
+    }
+    canvas{
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        z-index: -1;
+        background-size: cover;
+    }</style><script src=background.js></script><script src=js/chunk-vendors.4f2e94fd.js></script><script src=js/app.30037eaf.js></script></body></html>
